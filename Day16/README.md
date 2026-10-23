@@ -1,5 +1,6 @@
 # Day 16 — Generics
-    Theory
+
+# Theory
 
 1. Generic Classes
 
@@ -67,4 +68,4 @@ But not String.
 
 # Practical
 Create:
-Repository
+Repository and build generic CRUD operations.S
