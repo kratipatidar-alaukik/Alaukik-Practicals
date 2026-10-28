@@ -7,7 +7,7 @@ public class App {
 
         String url = "jdbc:mysql://localhost:3306/employee_db";
         String username = "root";
-        String password = "krati@020304";
+        String password = "*****";
 
         try {
 
