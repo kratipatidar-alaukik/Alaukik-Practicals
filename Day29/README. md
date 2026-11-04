@@ -1,0 +1,83 @@
+# Day29 – MVC Architecture
+
+## Overview
+Today I learned about MVC (Model-View-Controller) Architecture in Java Web Development. MVC is a design pattern used to separate an application into three main components: Model, View, and Controller.
+
+## 1. What is MVC Architecture?
+MVC stands for Model-View-Controller. It is a software design pattern that separates application logic, user interface, and request handling.
+
+It makes applications easier to develop, maintain, test, and manage.
+
+## 2. Components of MVC
+
+### Model
+- Represents application data and business-related information.
+- Handles data and interacts with the database through the DAO layer.
+- Example: Employee.java
+
+### View
+- Represents the user interface.
+- Displays data to the user.
+- In Java web applications, JSP is commonly used as the View.
+- Example: login.jsp, dashboard.jsp, employee-list.jsp
+
+### Controller
+- Handles incoming HTTP requests.
+- Communicates with the Model or Service layer.
+- Selects the appropriate View and sends responses.
+- In Java web applications, Servlets are commonly used as Controllers.
+- Example: EmployeeServlet.java
+
+## 3. Working of MVC Architecture
+
+The basic request flow is:
+
+Browser  
+↓  
+Controller (Servlet)  
+↓  
+Service Layer  
+↓  
+DAO Layer  
+↓  
+Database  
+
+The response travels back through the Controller to the View (JSP), which displays the result to the user.
+
+## 4. Advantages of MVC Architecture
+
+- Separation of concerns.
+- Easy maintenance and code management.
+- Code reusability.
+- Easier testing and debugging.
+- Supports teamwork and parallel development.
+- Makes applications more organized and scalable.
+
+## 5. MVC in Java Web Development
+
+In Java web applications:
+
+| MVC Component | Java Technology |
+|---|---|
+| Model | Java Classes |
+| View | JSP, HTML, CSS |
+| Controller | Servlet |
+| Database Access | JDBC, DAO |
+| Business Logic | Service Layer |
+
+## 6. MVC vs Three-Tier Architecture
+
+| MVC Architecture | Three-Tier Architecture |
+|---|---|
+| Divides an application into Model, View, and Controller. | Divides an application into Presentation, Business, and Data layers. |
+| Focuses on separating UI, data, and request handling. | Focuses on separating application responsibilities into layers. |
+| Commonly used in web application design. | Commonly used in enterprise application architecture. |
+
+## Conclusion
+
+MVC Architecture helps organize Java web applications by separating data, user interface, and request-handling logic. It makes applications easier to maintain, understand, test, and extend.
+
+**Technologies Learned:** Java, Servlet, JSP, JDBC, MVC Architecture, DAO Pattern.
+
+# Practical 
+Convert previous application into MVC architecture. 
